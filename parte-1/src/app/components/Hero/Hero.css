@@ -1,0 +1,176 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 100px 0 100px;
+
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Left side */
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 531px;
+  height: 481px;
+}
+
+/* Title */
+.title {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 1.2;
+  margin: 0;
+  color: #000;
+}
+
+/* Subtitle */
+.subtitle {
+  font-family: "Space Grotesk", sans-serif;
+  max-width: 498px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+  color: #000;
+}
+
+/* Button */
+.button {
+  background: #191A23;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 20px 35px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  max-width: 264px;
+}
+
+.button:hover {
+  background: #0f1015;
+}
+
+/* Right side */
+.right {
+  width: 600.46px;
+  height: 515px;
+  flex-shrink: 0;
+}
+
+.right img {
+  width: 100%;
+  height: auto;
+}
+
+/* responsividade */
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 60px 60px 0;
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .right {
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 40px 0;
+    gap: 50px;
+  }
+
+  .left {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .subtitle {
+    max-width: 700px;
+  }
+
+  .button {
+    max-width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 40px 24px 0;
+  }
+
+  .title {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 18px;
+    padding: 18px 24px;
+  }
+
+  .right {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 32px 20px 0;
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 16px 20px;
+    border-radius: 12px;
+  }
+
+  .right {
+    max-width: 320px;
+  }
+}

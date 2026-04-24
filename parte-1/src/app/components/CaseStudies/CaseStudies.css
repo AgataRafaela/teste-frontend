@@ -1,0 +1,131 @@
+.caseStudies {
+  width: 100%;
+  max-width: 1440px;
+  padding: 30px 100px;
+}
+
+.caseStudiesHeader {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.caseStudiesHeader h2 {
+  color: #000000;
+  gap: 10px;
+  padding: 0 7px;
+  border-radius: 7px;
+  background-color: #B9FF66;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.caseStudiesHeader p {
+  max-width: 580px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #000;
+  margin: 0;
+  font-weight: 400;
+}
+
+.caseStudiesContent {
+  background: #191a23;
+  max-width: 1234px;
+  border-radius: 45px;
+  padding: 70px 60px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 64px;
+  margin: 0;
+}
+
+.caseCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 286px;
+}
+
+.caseCard p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.caseCard a {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  color: #b9ff66;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.divider {
+  width: 1px;
+  background: #ffffff;
+  
+}
+
+/* Responsivo */
+
+@media (max-width: 1024px) {
+  .caseStudies {
+    padding: 60px 40px;
+  }
+
+  .caseStudiesContent {
+    padding: 50px 40px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .caseStudiesHeader {
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .caseStudiesHeader h2 {
+    font-size: 32px;
+  }
+
+  .caseStudiesHeader p {
+    font-size: 16px;
+  }
+
+  .caseStudiesContent {
+    flex-direction: column;
+    border-radius: 30px;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .caseStudies {
+    padding: 40px 20px;
+  }
+
+  .caseStudiesContent {
+    padding: 30px 20px;
+  }
+
+  .caseCard a {
+    font-size: 18px;
+  }
+}

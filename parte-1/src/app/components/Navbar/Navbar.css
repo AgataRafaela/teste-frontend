@@ -1,0 +1,79 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 100px 0 100px;
+  height: 68px;
+  background-color: #ffffff;
+  max-width: 1440px;
+}
+
+.logoContainer {
+  flex-shrink: 0;
+  padding: 10px 0;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  align-content: center;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #000;
+  font-family: Space Grotesk, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}
+
+.navLinks li:last-child a{
+  width: 231;
+  padding-top: 20px;
+  padding-right: 35px;
+  padding-bottom: 20px;
+  padding-left: 35px;
+  gap: 10px;
+  angle: 0 deg;
+  opacity: 1;
+  border-radius: 14px;
+  border-width: 1px;
+  border: 1px solid #191A23;
+}
+
+.ctaContainer {
+  flex-shrink: 0;
+}
+
+.ctaButton {
+  background-color: #191a23;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 20px 35px;
+  font-family: Space Grotesk, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background-color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .navLinks {
+    display: none;
+  }
+}

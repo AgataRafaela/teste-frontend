@@ -1,0 +1,125 @@
+.ctaBlock {
+  width: 100%;
+  display: flex;
+  max-width: 1440px;
+  padding: 124px 100px;
+  align-items: center;
+}
+
+.ctaContent {
+  background: #F3F3F3;
+  width: 1240px;
+  max-height: 346px;
+  border-radius: 45px;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: visible;
+  position: relative;
+}
+
+.ctaText {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.ctaText h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+
+}
+
+.ctaText p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+
+.ctaButton {
+  background: #191a23;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 14px;
+  padding: 20px 35px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+  max-width: 288px;
+}
+
+.ctaButton:hover {
+  opacity: 0.9;
+}
+
+.ctaImage {
+  flex-shrink: 0;
+  position: relative;
+  top: -20px;
+}
+
+.ctaImage img {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+}
+
+/* responsividade */
+
+@media (max-width: 1024px) {
+  .ctaBlock {
+    padding: 60px 40px;
+  }
+
+  .ctaContent {
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .ctaText h2 {
+    font-size: 26px;
+  }
+
+  .ctaText p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaContent {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .ctaText {
+    max-width: 100%;
+  }
+
+  .ctaImage img {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ctaBlock {
+    padding: 40px 20px;
+  }
+
+  .ctaContent {
+    border-radius: 30px;
+    padding: 30px 20px;
+  }
+
+  .ctaButton {
+    width: 100%;
+    padding: 18px;
+  }
+}
